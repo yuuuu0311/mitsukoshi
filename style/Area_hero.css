@@ -1,0 +1,123 @@
+.Area-hero {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    border-bottom: black;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    padding: 10rem 0;
+}
+
+.bg-deco {
+    position: absolute;
+}
+
+.bg-deco-tree-01 {
+    top: 0px;
+    max-width: 389px;
+    width: 19%;
+}
+
+.bg-deco-tree-02 {
+    bottom: -10px;
+    max-width: 760px;
+    width: 38%;
+}
+
+.bg-deco-tree-03 {
+    bottom: 0px;
+    right: 0px;
+    translate: 0 40%;
+    max-width: 589px;
+    width: 29%;
+}
+
+.bg-deco-cloud-01 {
+    top: 0px;
+    right: 0px;
+    max-width: 233px;
+    width: 11%;
+}
+
+.bg-deco-cloud-02 {
+    top: 240px;
+    max-width: 281px;
+    width: 14%;
+}
+
+.bg-deco-cloud-03 {
+    top: 0px;
+    max-width: 266px;
+    width: 13%;
+}
+
+.bg-deco-butterfly {
+    max-width: 123px;
+    width: 6%;
+    bottom: 30%;
+    right: 15%;
+}
+
+.bg-deco-bird {
+    max-width: 188px;
+    width: 9%;
+    top: 20%;
+    left: 15%;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.text-primary {
+    color: #d40512;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.text-seondary {
+    color: #232323;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.text-info {
+    color: #828282;
+    font-size: 1.5rem;
+    font-weight: semi-bold;
+    margin-bottom: 2rem;
+}
+
+.text-sub {
+    color: #828282;
+    font-weight: semi-bold;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.text-green {
+    color: #78a402;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 75%;
+    margin-bottom: 2rem;
+}
+
+.hero-card {
+    max-width: 902px;
+    width: 45%;
+    margin: 0 auto;
+    z-index: 10;
+    position: relative;
+}

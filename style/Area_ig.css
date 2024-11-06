@@ -1,0 +1,65 @@
+.Area-ig {
+    position: relative;
+    width: 100%;
+}
+
+.ig-content {
+    background: #ebebeb;
+    color: #737373;
+    text-align: center;
+    font-weight: semi-bold;
+    padding: 5rem;
+    margin: 5rem 0 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bg-deco-ig-01 {
+    top: 5%;
+    right: 14%;
+    max-width: 360px;
+    width: 18%;
+}
+
+.bg-deco-ig-02 {
+    top: 15%;
+    left: 23%;
+    max-width: 238px;
+    width: 12%;
+}
+
+.bg-deco-ig-03 {
+    top: -2%;
+    left: 3%;
+    max-width: 360px;
+    width: 18%;
+}
+
+.bg-deco-ig-04 {
+    top: 53%;
+    right: 20%;
+    max-width: 192px;
+    width: 10%;
+}
+
+.bg-deco-ig-05 {
+    top: 30%;
+    right: 3%;
+    max-width: 192px;
+    width: 10%;
+}
+
+.bg-deco-ig-06 {
+    top: 45%;
+    left: 15%;
+    max-width: 309px;
+    width: 14%;
+}
+
+.bg-deco-ig-07 {
+    top: 60%;
+    right: 2%;
+    max-width: 309px;
+    width: 15%;
+}

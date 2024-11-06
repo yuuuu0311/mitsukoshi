@@ -1,0 +1,28 @@
+@import "./Area_hero.css";
+@import "./Area_info.css";
+@import "./Area_ig.css";
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background: #f6f6f6;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.Area {
+    overflow: hidden;
+}
