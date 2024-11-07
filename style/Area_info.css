@@ -82,3 +82,101 @@
     gap: 4rem;
     padding: 5rem 2rem;
 }
+
+@media screen and (max-width: 767px) {
+    .Area-info {
+        position: relative;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 0.25rem;
+        flex-wrap: wrap;
+    }
+
+    .circle-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.75rem;
+        position: relative;
+    }
+    .circle-text {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: current-color;
+        color: #939393;
+        font-size: 1rem;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .circle-text-l {
+        left: 0px;
+    }
+
+    .circle-text-r {
+        right: 0px;
+    }
+
+    .circle {
+        max-width: 835px;
+        width: 80%;
+    }
+
+    .card-group {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 649px));
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0 auto;
+        width: 95%;
+        max-width: 1330px;
+    }
+
+    .btn {
+        max-width: 278px;
+        width: 40%;
+    }
+
+    .card {
+        max-width: 649px;
+        flex-basis: calc(50% - 0.5rem);
+    }
+
+    .info-title {
+        text-align: center;
+        color: #1a1a1a;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .bg-deco-tree-04 {
+        bottom: 0px;
+        right: 0px;
+        max-width: 687px;
+        width: 54%;
+    }
+
+    .bg-deco-tree-05 {
+        bottom: 0px;
+        left: 0px;
+        translate: 0 43%;
+        max-width: 576px;
+        width: 45%;
+    }
+
+    .info-content {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem 1rem;
+    }
+}

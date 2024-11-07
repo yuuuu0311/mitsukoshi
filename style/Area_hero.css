@@ -1,11 +1,22 @@
 .Area-hero {
     position: relative;
     width: 100%;
-    min-height: 500px;
+    min-height: 100vh;
     border-bottom: black;
     border-bottom-width: 3px;
     border-bottom-style: solid;
     padding: 10rem 0;
+    animation: hero-in 1s ease-in-out;
+}
+
+@keyframes hero-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .bg-deco {
@@ -33,22 +44,24 @@
 }
 
 .bg-deco-cloud-01 {
-    top: 0px;
+    top: 30px;
     right: 0px;
     max-width: 233px;
     width: 11%;
 }
 
 .bg-deco-cloud-02 {
-    top: 240px;
-    max-width: 281px;
-    width: 14%;
+    top: 290px;
+    right: 40px;
+    max-width: 266px;
+    width: 13%;
 }
 
 .bg-deco-cloud-03 {
-    top: 0px;
-    max-width: 266px;
-    width: 13%;
+    top: 620px;
+    left: 0px;
+    max-width: 281px;
+    width: 14%;
 }
 
 .bg-deco-butterfly {
@@ -56,6 +69,17 @@
     width: 6%;
     bottom: 30%;
     right: 15%;
+    animation: butterfly 7s ease-in-out infinite alternate;
+}
+
+@keyframes butterfly {
+    from {
+        transform: translate(0%, 30%) rotate(5deg);
+    }
+
+    to {
+        transform: translate(15%, -10%) rotate(0deg);
+    }
 }
 
 .bg-deco-bird {
@@ -63,6 +87,17 @@
     width: 9%;
     top: 20%;
     left: 15%;
+    animation: bird 2s ease-in-out infinite alternate;
+}
+
+@keyframes bird {
+    from {
+        transform: translate(0%, 30%) rotate(5deg);
+    }
+
+    to {
+        transform: translate(15%, -10%) rotate(0deg);
+    }
 }
 
 .content {
@@ -120,4 +155,134 @@
     margin: 0 auto;
     z-index: 10;
     position: relative;
+}
+
+@media screen and (max-width: 767px) {
+    .Area-hero {
+        position: relative;
+        width: 100%;
+        min-height: 500px;
+        border-bottom: black;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        padding: 5rem 0 4rem;
+    }
+
+    .bg-deco {
+        position: absolute;
+    }
+
+    .bg-deco-tree-01 {
+        position: fixed;
+        z-index: 999;
+        top: 0px;
+        max-width: 389px;
+        width: 25%;
+    }
+
+    .bg-deco-tree-02 {
+        bottom: -10px;
+        max-width: 760px;
+        width: 45%;
+    }
+
+    .bg-deco-tree-03 {
+        bottom: 0px;
+        right: 0px;
+        translate: 0 45%;
+        max-width: 589px;
+        width: 35%;
+    }
+
+    .bg-deco-cloud-01 {
+        top: 3%;
+        right: 0px;
+        max-width: 233px;
+        width: 18%;
+        position: fixed;
+        z-index: 999;
+    }
+
+    .bg-deco-cloud-02 {
+        top: 240px;
+        max-width: 281px;
+        width: 14%;
+    }
+
+    .bg-deco-cloud-03 {
+        top: 0px;
+        max-width: 266px;
+        width: 13%;
+    }
+
+    .bg-deco-butterfly {
+        max-width: 123px;
+        width: 6%;
+        bottom: 30%;
+        right: 15%;
+    }
+
+    .bg-deco-bird {
+        max-width: 188px;
+        width: 9%;
+        top: 16%;
+        left: 10%;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 2rem 2rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .text-primary {
+        color: #d40512;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .text-seondary {
+        color: #232323;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .text-info {
+        color: #828282;
+        font-size: 1.25rem;
+        font-weight: semi-bold;
+        margin-bottom: 1rem;
+    }
+
+    .text-sub {
+        color: #828282;
+        font-weight: semi-bold;
+        font-size: 1.15rem;
+        margin-bottom: 2rem;
+        line-height: 1.75;
+        text-align: center;
+    }
+
+    .text-green {
+        color: #78a402;
+        font-size: 1.35rem;
+        text-align: center;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .hero-card {
+        max-width: 902px;
+        width: 80%;
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+    }
 }

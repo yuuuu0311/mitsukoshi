@@ -4,6 +4,12 @@
 
 * {
     box-sizing: border-box;
+    transition: scale 0.3s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20vh;
 }
 
 img {
@@ -25,4 +31,27 @@ p {
 
 .Area {
     overflow: hidden;
+}
+
+.for-pc {
+    display: block;
+}
+
+.for-mb {
+    display: none;
+}
+
+.hover:hover {
+    transition: scale 0.3s linear;
+    scale: 0.95;
+}
+
+@media screen and (max-width: 767px) {
+    .for-pc {
+        display: none;
+    }
+
+    .for-mb {
+        display: block;
+    }
 }
