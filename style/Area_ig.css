@@ -1,6 +1,7 @@
 .Area-ig {
     position: relative;
     width: 100%;
+    overflow: hidden;
 }
 
 .ig-content {
@@ -13,6 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    font-size: 1.25rem;
 }
 
 .bg-deco-ig-01 {
